@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Validate JSON files
-        run: pipx run check-jsonschema=0.36.1 --check-metaschema **/*.json
+        run: pipx run check-jsonschema==0.36.1 --check-metaschema **/*.json
