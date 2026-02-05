@@ -6,7 +6,7 @@
       "options": [
         {
           "longName": "input",
-          "helpText": "",
+          "helpText": "Input Files",
           "valueHelper": "<files>"
         },
         {
