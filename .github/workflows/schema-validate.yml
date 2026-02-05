@@ -8,8 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Validate JSON file
-        uses: python-jsonschema/check-jsonschema@0.36.1
-        with:
-          files: 'resources/cli-options.json'
-          schema: 'resources/cli-options.schema.json'
+      - name: Validate JSON files
+        run: pipx run check-jsonschema=0.36.1 --check-metaschema **/*.json
